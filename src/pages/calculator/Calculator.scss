@@ -1,0 +1,46 @@
+.h-center {
+    margin: 0 auto;
+}
+
+.container {
+    width: 90%;
+    height: 100vh;
+    @extend .h-center;
+
+    h1 {
+        text-align: center;
+    }
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 400px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    @extend .h-center;
+
+    .input-area {
+        @extend .center;
+
+        input {
+            margin: 5px;
+            width: 100%;
+            padding: 5px;
+        }
+    }
+    .button-area {
+        @extend .center;
+        button {
+            @extend .center;
+            font-size: 16px;
+            margin: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}
